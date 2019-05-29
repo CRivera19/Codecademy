@@ -5,6 +5,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  margin: 0;
 }
 
 a {
@@ -14,25 +15,22 @@ a {
 /* Navigation */
 
 nav {
-  text-align: center;
-  width: 180px;
-  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav img {
-  display: block;
-}
-
-nav span {
-  display: block;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  margin: 10px 0;
+  margin-bottom: 20px;
+  max-width: 180px;
 }
 
 nav a {
   color: #666666;
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 1em;
 }
 
 /* Content Container */
@@ -49,15 +47,15 @@ nav a {
 /* Content Header */
 
 .header {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
+  background-color: yellow ;
   background-position: center;
   background-size: cover;
   height: 320px;
 }
 
 .header h1 {
-  background-color: #05A8AA;
-  color: #FFF;
+  background-color: rgba(215, 53, 53, 0.90);
+  color: rgb(252, 252, 252);
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 300;
@@ -65,6 +63,8 @@ nav a {
   width: 68%;
   padding: 20px;
   margin: 0 auto;
+  position: relative;
+  top: 120px;
 }
 
 /* Content Body */
