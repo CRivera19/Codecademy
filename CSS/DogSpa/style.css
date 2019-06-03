@@ -5,12 +5,16 @@ body {
 }
 
 .grid {
+  display: grid;
+  grid-template: 5% 30% 10% 30% 20% 5% / repeat(6, 1fr);
+  grid-column-gap: 20px;
 }
 
 header {
   background-color: #ffffff;
   color: #dc6363;
   padding-top: 10px;
+  grid-column: span 6;
 }
 
 .banner {
@@ -21,6 +25,7 @@ header {
   font-weight: 300;
   letter-spacing: 3.7px;
   color: #ffffff;
+  grid-column: span 6;
 }
 
 img {
@@ -30,6 +35,7 @@ img {
 .about {
   background-color: #f0f0f0;
   padding-bottom: 20px;
+  grid-column: span 6;
 }
 
 .text {
@@ -59,12 +65,15 @@ img {
 }
 
 .address {
+  grid-column: 1 / span 2;
 }
 
 .hours {
+  grid-column: 3 / span 2;
 }
 
 .call-us {
+  grid-column: 5 / span 2;
 }
 
 .marker {
@@ -95,9 +104,11 @@ img {
 }
 
 .one {
+  grid-column: 1 / span 3;
 }
 
 .two {
+  grid-column: 4 / span 3;
 }
 
 footer {
@@ -107,13 +118,18 @@ footer {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.4px;
+  grid-column: span 6;
 }
 
 @media (max-width: 600px) {
   .grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 30% 10% repeat(3, 10%) repeat(2, 10%) 5%;
+    grid-row-gap: 20px;
   }
 
   header {
+    margin-bottom: -20px;
   }
 
   .banner {
@@ -121,6 +137,7 @@ footer {
     font-weight: 300;
     line-height: 2.75;
     letter-spacing: 1.9px;
+    margin-bottom: -20px;
   }
 
   .dog {
@@ -130,6 +147,8 @@ footer {
   }
 
   .about {
+    grid-row: 4 / span 1;
+    margin-bottom: -20px;
   }
 
   .text {
@@ -147,12 +166,18 @@ footer {
   }
 
   .address {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
   }
 
   .hours {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 1;
   }
 
   .call-us {
+    grid-row: 6 / span 1;
+    grid-column: 1 / span 1;
   }
 
   .marker {
@@ -177,11 +202,16 @@ footer {
   }
 
   .one {
+    grid-row: 7 / span 1;
+    grid-column: 1 / span 1;
   }
 
   .two {
+    grid-row: 8 / span 1;
+    grid-column: 1 / span 1;
   }
 
   footer {
+    margin-top: -20px;
   }
 }
