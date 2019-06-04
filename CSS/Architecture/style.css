@@ -1,0 +1,106 @@
+body {
+  font-size: 1.2em;
+}
+
+#app {
+  width: 90%;
+  margin: auto;
+}
+
+.grid {
+}
+
+/* set 1: repurposed living */
+.a {
+}
+
+.b {
+}
+
+.c {
+}
+
+/* set 2: angles */
+
+.d {
+}
+
+.e {
+}
+
+.f {
+}
+
+/* set 3: pattern play */
+
+.g {
+}
+
+.h {
+}
+
+.i {
+}
+
+/* set 4: healing house */
+
+.j {
+}
+
+.k {
+}
+
+.l {
+}
+
+/* set 5: curved perfection */
+
+.m {
+}
+
+.n {
+}
+
+.o {
+}
+
+.headLine {
+  margin-top: 5vh;
+  height: 20vh;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 120%;
+  margin-bottom: 10vh;
+}
+
+.box {
+  font-family: "Roboto Slab", serif;
+  font-size: 90%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 180%;
+  font-family: "Playfair Display", serif;
+  text-decoration: underline;
+}
+
+/* media queries */
+
+@media (min-width: 1150px) {
+  #app {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+  }
+
+  .title {
+    width: 65%;
+    font-size: 120%;
+  }
+}
